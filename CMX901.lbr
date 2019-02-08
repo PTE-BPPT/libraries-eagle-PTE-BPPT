@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.01" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -1435,6 +1435,54 @@ Source: ww1.microchip.com/downloads/en/DeviceDoc/39605c.pdf</description>
 <rectangle x1="-1.6" y1="2.525" x2="-1" y2="2.875" layer="31" rot="R270"/>
 <rectangle x1="-2.25" y1="2.525" x2="-1.65" y2="2.875" layer="31" rot="R270"/>
 </package>
+<package name="QFN50P495X495X85-29T290" urn="urn:adsk.eagle:footprint:8765361/1" locally_modified="yes">
+<description>28-QFN, 0.50 mm pitch, 4.95 X 4.95 X 0.85 mm body, 2.90 X 2.90 mm thermal pad
+&lt;p&gt;28-pin QFN package with 0.50 mm pitch with body size 4.95 X 4.95 X 0.85 mm and thermal pad size 2.90 X 2.90 mm&lt;/p&gt;</description>
+<circle x="-3.004" y="2.1467" radius="0.25" width="0" layer="21"/>
+<wire x1="-2.5" y1="1.8967" x2="-2.5" y2="2.5" width="0.12" layer="21"/>
+<wire x1="-2.5" y1="2.5" x2="-1.8967" y2="2.5" width="0.12" layer="21"/>
+<wire x1="2.5" y1="1.8967" x2="2.5" y2="2.5" width="0.12" layer="21"/>
+<wire x1="2.5" y1="2.5" x2="1.8967" y2="2.5" width="0.12" layer="21"/>
+<wire x1="2.5" y1="-1.8967" x2="2.5" y2="-2.5" width="0.12" layer="21"/>
+<wire x1="2.5" y1="-2.5" x2="1.8967" y2="-2.5" width="0.12" layer="21"/>
+<wire x1="-2.5" y1="-1.8967" x2="-2.5" y2="-2.5" width="0.12" layer="21"/>
+<wire x1="-2.5" y1="-2.5" x2="-1.8967" y2="-2.5" width="0.12" layer="21"/>
+<wire x1="2.5" y1="-2.5" x2="-2.5" y2="-2.5" width="0.12" layer="51"/>
+<wire x1="-2.5" y1="-2.5" x2="-2.5" y2="2.5" width="0.12" layer="51"/>
+<wire x1="-2.5" y1="2.5" x2="2.5" y2="2.5" width="0.12" layer="51"/>
+<wire x1="2.5" y1="2.5" x2="2.5" y2="-2.5" width="0.12" layer="51"/>
+<smd name="1" x="-2.3547" y="1.5" dx="1.1638" dy="0.2855" layer="1" roundness="100"/>
+<smd name="2" x="-2.3547" y="1" dx="1.1638" dy="0.2855" layer="1" roundness="100"/>
+<smd name="3" x="-2.3547" y="0.5" dx="1.1638" dy="0.2855" layer="1" roundness="100"/>
+<smd name="4" x="-2.3547" y="0" dx="1.1638" dy="0.2855" layer="1" roundness="100"/>
+<smd name="5" x="-2.3547" y="-0.5" dx="1.1638" dy="0.2855" layer="1" roundness="100"/>
+<smd name="6" x="-2.3547" y="-1" dx="1.1638" dy="0.2855" layer="1" roundness="100"/>
+<smd name="7" x="-2.3547" y="-1.5" dx="1.1638" dy="0.2855" layer="1" roundness="100"/>
+<smd name="8" x="-1.5" y="-2.3547" dx="1.1638" dy="0.2855" layer="1" roundness="100" rot="R90"/>
+<smd name="9" x="-1" y="-2.3547" dx="1.1638" dy="0.2855" layer="1" roundness="100" rot="R90"/>
+<smd name="10" x="-0.5" y="-2.3547" dx="1.1638" dy="0.2855" layer="1" roundness="100" rot="R90"/>
+<smd name="11" x="0" y="-2.3547" dx="1.1638" dy="0.2855" layer="1" roundness="100" rot="R90"/>
+<smd name="12" x="0.5" y="-2.3547" dx="1.1638" dy="0.2855" layer="1" roundness="100" rot="R90"/>
+<smd name="13" x="1" y="-2.3547" dx="1.1638" dy="0.2855" layer="1" roundness="100" rot="R90"/>
+<smd name="14" x="1.5" y="-2.3547" dx="1.1638" dy="0.2855" layer="1" roundness="100" rot="R90"/>
+<smd name="15" x="2.3547" y="-1.5" dx="1.1638" dy="0.2855" layer="1" roundness="100"/>
+<smd name="16" x="2.3547" y="-1" dx="1.1638" dy="0.2855" layer="1" roundness="100"/>
+<smd name="17" x="2.3547" y="-0.5" dx="1.1638" dy="0.2855" layer="1" roundness="100"/>
+<smd name="18" x="2.3547" y="0" dx="1.1638" dy="0.2855" layer="1" roundness="100"/>
+<smd name="19" x="2.3547" y="0.5" dx="1.1638" dy="0.2855" layer="1" roundness="100"/>
+<smd name="20" x="2.3547" y="1" dx="1.1638" dy="0.2855" layer="1" roundness="100"/>
+<smd name="21" x="2.3547" y="1.5" dx="1.1638" dy="0.2855" layer="1" roundness="100"/>
+<smd name="22" x="1.5" y="2.3547" dx="1.1638" dy="0.2855" layer="1" roundness="100" rot="R90"/>
+<smd name="23" x="1" y="2.3547" dx="1.1638" dy="0.2855" layer="1" roundness="100" rot="R90"/>
+<smd name="24" x="0.5" y="2.3547" dx="1.1638" dy="0.2855" layer="1" roundness="100" rot="R90"/>
+<smd name="25" x="0" y="2.3547" dx="1.1638" dy="0.2855" layer="1" roundness="100" rot="R90"/>
+<smd name="26" x="-0.5" y="2.3547" dx="1.1638" dy="0.2855" layer="1" roundness="100" rot="R90"/>
+<smd name="27" x="-1" y="2.3547" dx="1.1638" dy="0.2855" layer="1" roundness="100" rot="R90"/>
+<smd name="28" x="-1.5" y="2.3547" dx="1.1638" dy="0.2855" layer="1" roundness="100" rot="R90"/>
+<smd name="29" x="0" y="0" dx="2.9" dy="2.9" layer="1" thermals="no"/>
+<text x="0" y="3.5716" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-3.5716" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="QFN28" urn="urn:adsk.eagle:package:20820/2" type="model">
@@ -1443,6 +1491,13 @@ Source: ww1.microchip.com/downloads/en/DeviceDoc/39605c.pdf</description>
 Source: ww1.microchip.com/downloads/en/DeviceDoc/39605c.pdf</description>
 <packageinstances>
 <packageinstance name="QFN28"/>
+</packageinstances>
+</package3d>
+<package3d name="QFN50P495X495X85-29T290" urn="urn:adsk.eagle:package:8765349/1" locally_modified="yes" type="model">
+<description>28-QFN, 0.50 mm pitch, 4.95 X 4.95 X 0.85 mm body, 2.90 X 2.90 mm thermal pad
+&lt;p&gt;28-pin QFN package with 0.50 mm pitch with body size 4.95 X 4.95 X 0.85 mm and thermal pad size 2.90 X 2.90 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="QFN50P495X495X85-29T290"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -1523,6 +1578,52 @@ Source: ww1.microchip.com/downloads/en/DeviceDoc/39605c.pdf</description>
 <connect gate="G$1" pin="VGS2" pad="28"/>
 <connect gate="G$1" pin="VGS3" pad="24"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CMX902">
+<gates>
+<gate name="G$1" symbol="CMX901" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="QFN50P495X495X85-29T290">
+<connects>
+<connect gate="G$1" pin="GND" pad="29"/>
+<connect gate="G$1" pin="NC10" pad="10"/>
+<connect gate="G$1" pin="NC11" pad="11"/>
+<connect gate="G$1" pin="NC12" pad="12"/>
+<connect gate="G$1" pin="NC13" pad="13"/>
+<connect gate="G$1" pin="NC15" pad="15"/>
+<connect gate="G$1" pin="NC2" pad="2"/>
+<connect gate="G$1" pin="NC21" pad="21"/>
+<connect gate="G$1" pin="NC22" pad="22"/>
+<connect gate="G$1" pin="NC23" pad="23"/>
+<connect gate="G$1" pin="NC25" pad="25"/>
+<connect gate="G$1" pin="NC27" pad="27"/>
+<connect gate="G$1" pin="NC4" pad="4"/>
+<connect gate="G$1" pin="NC6" pad="6"/>
+<connect gate="G$1" pin="NC7" pad="7"/>
+<connect gate="G$1" pin="NC9" pad="9"/>
+<connect gate="G$1" pin="RFIN1" pad="3"/>
+<connect gate="G$1" pin="RFIN2" pad="5"/>
+<connect gate="G$1" pin="RFOUT1" pad="16"/>
+<connect gate="G$1" pin="RFOUT2" pad="17"/>
+<connect gate="G$1" pin="RFOUT3" pad="18"/>
+<connect gate="G$1" pin="RFOUT4" pad="19"/>
+<connect gate="G$1" pin="RFOUT5" pad="20"/>
+<connect gate="G$1" pin="VA" pad="14"/>
+<connect gate="G$1" pin="VDD1" pad="1"/>
+<connect gate="G$1" pin="VDD2" pad="26"/>
+<connect gate="G$1" pin="VGS1" pad="8"/>
+<connect gate="G$1" pin="VGS2" pad="28"/>
+<connect gate="G$1" pin="VGS3" pad="24"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:8765349/1"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
