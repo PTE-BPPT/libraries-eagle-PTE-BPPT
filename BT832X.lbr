@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="9.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -71,7 +72,7 @@
 </layers>
 <library>
 <packages>
-<package name="BT832X">
+<package name="BT832X" urn="urn:adsk.eagle:footprint:19400706/1">
 <wire x1="-0.8" y1="0" x2="0" y2="0" width="0.001" layer="21"/>
 <wire x1="0" y1="0" x2="12.59933125" y2="0" width="0.001" layer="21"/>
 <wire x1="12.59933125" y1="0" x2="12.59933125" y2="-0.00066875" width="0.001" layer="21"/>
@@ -87,6 +88,13 @@
 <wire x1="0" y1="0" x2="0" y2="-0.00066875" width="0.001" layer="21"/>
 <wire x1="0" y1="-0.15" x2="0" y2="0.15" width="0.001" layer="21" curve="180"/>
 <wire x1="0" y1="0.15" x2="0" y2="-0.15" width="0.001" layer="21" curve="180"/>
+<wire x1="0" y1="0" x2="0" y2="12.7" width="0.127" layer="21"/>
+<wire x1="14" y1="16" x2="14" y2="0" width="0.127" layer="21"/>
+<wire x1="14" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
+<wire x1="0" y1="12.7" x2="-1" y2="12.7" width="0.127" layer="21"/>
+<wire x1="-1" y1="12.8" x2="-1" y2="28" width="0.127" layer="21"/>
+<wire x1="-1" y1="28" x2="14" y2="28" width="0.127" layer="21"/>
+<wire x1="14" y1="28" x2="14" y2="16" width="0.127" layer="21"/>
 <smd name="P$1" x="0" y="8.8" dx="1.5" dy="0.7" layer="1" rot="R180"/>
 <smd name="P$2" x="0" y="7.7" dx="1.5" dy="0.7" layer="1"/>
 <smd name="P$3" x="0" y="6.6" dx="1.5" dy="0.7" layer="1"/>
@@ -127,20 +135,20 @@
 <smd name="P$C0" x="7.75" y="8" dx="0.6" dy="0.6" layer="1" roundness="100" rot="R180"/>
 <smd name="P$D0" x="9.25" y="8" dx="0.6" dy="0.6" layer="1" roundness="100" rot="R180"/>
 <smd name="P$D1" x="9.25" y="6.8" dx="0.6" dy="0.6" layer="1" roundness="100" rot="R180"/>
-<wire x1="0" y1="0" x2="0" y2="12.7" width="0.127" layer="21"/>
-<wire x1="14" y1="16" x2="14" y2="0" width="0.127" layer="21"/>
-<wire x1="14" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
-<wire x1="0" y1="12.7" x2="-1" y2="12.7" width="0.127" layer="21"/>
-<wire x1="-1" y1="12.8" x2="-1" y2="28" width="0.127" layer="21"/>
-<wire x1="-1" y1="28" x2="14" y2="28" width="0.127" layer="21"/>
-<wire x1="14" y1="28" x2="14" y2="16" width="0.127" layer="21"/>
-<text x="3.9" y="23.1" size="1.27" layer="21">BT832X</text>
 <smd name="P$F0" x="3.63" y="10" dx="1.5" dy="1.5" layer="1"/>
 <smd name="P$F1" x="5.88" y="10" dx="1.5" dy="1.5" layer="1"/>
 <smd name="P$F2" x="8.13" y="10" dx="1.5" dy="1.5" layer="1"/>
 <smd name="P$F3" x="10.38" y="10" dx="1.5" dy="1.5" layer="1"/>
+<text x="3.9" y="23.1" size="1.27" layer="21">BT832X</text>
 </package>
 </packages>
+<packages3d>
+<package3d name="BT832X" urn="urn:adsk.eagle:package:19400705/2" type="model">
+<packageinstances>
+<packageinstance name="BT832X"/>
+</packageinstances>
+</package3d>
+</packages3d>
 <symbols>
 <symbol name="BT832X">
 <wire x1="-26.78" y1="46.68" x2="-26.78" y2="-26.24" width="0.254" layer="94"/>
@@ -259,6 +267,8 @@
 <pin name="F1/GND" x="-32" y="36.2" length="middle"/>
 <pin name="F2/GND" x="-31.9" y="32.1" length="middle"/>
 <pin name="F3/GND" x="-31.9" y="27.9" length="middle"/>
+<text x="-25.4" y="48.26" size="1.778" layer="95">&gt;NAME</text>
+<text x="15.24" y="48.26" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -314,6 +324,9 @@
 <connect gate="G$1" pin="SWDIO" pad="P$16"/>
 <connect gate="G$1" pin="VDD" pad="P$9"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:19400705/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -323,4 +336,16 @@
 </devicesets>
 </library>
 </drawing>
+<compatibility>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports URNs for individual library
+assets (packages, symbols, and devices). The URNs of those assets
+will not be understood (or retained) with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports the association of 3D packages
+with devices in libraries, schematics, and board files. Those 3D
+packages will not be understood (or retained) with this version.
+</note>
+</compatibility>
 </eagle>
